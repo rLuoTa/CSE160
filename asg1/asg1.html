@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Assignment1</title>
+    <script src="asg1.js"></script>
+    <script src="Points.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/webgl-utils.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .img{
+            width: 50px;
+            height: 65px;
+            position: absolute;
+            background-image: url('https://people.ucsc.edu/~tluo10/CSE160/asg1/portait.gif');
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body onload = "main()">
+    <canvas id="webgl" width="400" height="400">
+        Please use a browser that supports "canvas"
+    </canvas>
+    <br><br>
+    <input type="button" value="Clear Canvas" onclick="clearcanvas()">
+    <br><br>
+
+    Drawing Mode:
+    <br>
+    <input type="button" id = "square" value="Squares">
+    <input type="button" id = "triangle"value="Triangles">
+    <input type="button" id = "circle" value="Circles">
+    <br><br>
+    Shape Color:
+    <input type="button" id = "color" value="Random">
+    <input type="button" id = "show" value="Show Color" onclick="showColor()">
+    <div>
+        <label for = "redS">Red</label>
+        <input type="range" id="redS" name="redS"
+               min="0" max="256">
+
+        <label for = "greenS">Green</label>
+        <input type="range" id="greenS" name="greenS"
+               min="0" max="256">
+
+        <label for = "blueS">Blue</label>
+        <input type="range" id="blueS" name="blueS"
+               min="0" max="256">
+        <label for = "alphaS">Alpha</label>
+        <input type="range" id="alphaS" name="alphaS"
+               min="0" max="100">
+    </div>
+
+    <div>
+        <label for = "shapeS">Shape Size</label>
+        <input type="range" id="shapeS" name="shapeS"
+               min="0" max="50">
+        <label for = "segC">(Circles) Segment Count</label>
+        <input type="range" id="segC" name="segC"
+               min="3" max="45">
+    </div>
+    <br><br>
+    <input type="button" value="Painting" onclick="Painting()"></input>
+    <CENTER>
+    <img src="https://people.ucsc.edu/~tluo10/CSE160/asg1/painting.jpg" alt="Reference" width="600px" height="400px">
+    </CENTER>
+
+    <div class="img"></div>
+
+</body>
+
+<script>
+    let img = document.querySelector('.img')
+    let deg = 0
+    let imgx = 0
+    let imgy = 0
+    let imgl = 0
+    let imgt = 0
+    let y = 0
+    let index = 0
+
+    window.addEventListener('mousemove',function(xyz){
+        imgx = xyz.x - img.offsetLeft - img.clientWidth /2
+        imgy = xyz.y - img.offsetTop - img.clientHeight /2
+        deg = 360*Math.atan(imgy/imgx)/(2*Math.PI)
+        index= 0
+        let x = event.clientX
+        if(img.offsetLeft<x){
+            y=-180
+        }else{
+            y=0
+        }
+    })
+    setInterval(()=>{
+        img.style.transform = "rotateZ("+deg+"deg) rotateY("+y+"deg)"
+        index++
+        if(index<50){
+            imgl+=imgx/50
+            imgt+=imgy/50
+        }
+        img.style.left = imgl+"px"
+        img.style.top = imgt+"px"
+    },10)
+</script>
+</html>

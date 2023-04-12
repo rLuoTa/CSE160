@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ASG 5</title>
+    <style>
+        html, body {
+            margin: 0;
+        }
+        #c {
+            width: 800px;
+            height: 400px;
+            display: block;
+        }
+        .split {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 800px;
+            height: 400px;
+            display: flex;
+        }
+        .split>div {
+            width: 800px;
+            height: 400px;
+        }
+    </style>
+
+</head>
+<body>
+    <canvas id="c" width="800" height="400">
+        Please use a browser that supports "canvas"
+
+    </canvas>
+    <div class="split">
+        <div id="view1" tabindex="1"></div>
+        <div id="view2" tabindex="2"></div>
+    </div>
+
+    <p>
+
+        <script type="importmap">
+        {
+          "imports": {
+            "three": "./three.js-master/build/three.module.js",
+            "three/addons/": "./three.js-master/jsm/"
+          }
+        }
+        </script>
+        <script type="module" src="asg5.js"></script>
+    <p>
+        Basic scene:    Shape family visit shape aquarium.
+        <p>
+        Obj: soccer     Source:https://blendswap.com/blend/23755
+        <p>
+        Light:  ambient, direct, spot
+        <br>
+        Extra: Fog, Multiple Cameras, Render to Texture
+    </p>
+
+</body>
+</html>

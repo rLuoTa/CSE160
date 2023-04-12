@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Assignment 2 - Blocky Animal</title>
+    <script src="Points.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Pyramid.js"></script>
+    <script src="Camara.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="BlockyAnimal.js"></script>
+
+
+</head>
+
+<body onload = "main()">
+    <canvas id="webgl" width="400" height="400">
+        Please use a browser that supports "canvas"
+    </canvas>
+    <p id="numdot">MS, FPS</p>
+    <input type="button" value="Reset" onclick="Reset()">
+    <input type="button" value="Maze" onclick="Maze()">
+
+    <input type="button" value="ADD BLOCK" onclick="addBlock()">
+    <input type="button" value="DELETE BLOCK" onclick="deleteBlock()">
+    <br><br>
+    W moves camera forward.<br>
+    A moves camera to the left.<br>
+    S moves camera backwards<br>
+    D moves camera to the right.<br>
+    Q turn camera left.<br>
+    E turn camera right.<br>
+    ↑ moves camera forward.<br>
+    ↓ moves camera downward.<br>
+    Add/delete block works for block in front of you.<br>
+    Maze for the game, find Mr. Black (my animal), it is a terrain map.<br>
+    Reset for the original world<br>
+
+    <CENTER>
+        <img src="Maze.png" alt="Reference" width="600px" height="600px">
+    </CENTER>
+
+
+    <br>
+    <br><br>
+    Walk:
+    <button type="button" id="animationRunOnButton">ON</button>
+    <button type="button" id="animationRunOffButton">OFF</button>
+    <br>
+    <div>
+        <p>
+            Head <input type="range" min="-45" max="45" value="0" class="slider" id="headSlide">
+
+            Animation:
+            <button type="button" id="animationHeadOnButton">ON</button>
+            <button type="button" id="animationHeadOffButton">OFF</button>
+
+        <p>
+            Tail <input type="range" min="-90" max="60" value="0" class="slider" id="tailSlide">
+
+            Animation:
+            <button type="button" id="animationTailOnButton">ON</button>
+            <button type="button" id="animationTailOffButton">OFF</button>
+        <p>
+        Tail1 <input type="range" min="-15" max="15" value="0" class="slider" id="tailSlide0">
+        Tail2 <input type="range" min="-15" max="15" value="0" class="slider" id="tailSlide1">
+        Tail3 <input type="range" min="-15" max="15" value="0" class="slider" id="tailSlide2">
+
+    </p>
+        <p>
+            Camera Angle (x) <input type="range" min="-180" max="180" value="0" class="slider" id="angleSlideX">
+        <p>
+            Camera Angle (y) <input type="range" min="-180" max="180" value="0" class="slider" id="angleSlideY">
+        <p>
+            Camera Angle (z) <input type="range" min="-180" max="180" value="0" class="slider" id="angleSlideZ">
+        </p>
+    </div>
+
+</body>
+
+
+</html>

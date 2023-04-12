@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7903dc48-2ee8-413f-b9ea-461fae325ec7" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2GdUjOkaicmmnzjQnCdhAXXoHj1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rose/Desktop/CSE 160/asgn3&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7903dc48-2ee8-413f-b9ea-461fae325ec7" name="Changes" comment="" />
+      <created>1666718088383</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666718088383</updated>
+      <workItem from="1666718089689" duration="269000" />
+      <workItem from="1666748556478" duration="2000" />
+      <workItem from="1666823288296" duration="1469000" />
+      <workItem from="1666838154741" duration="21000" />
+      <workItem from="1667247390173" duration="3090000" />
+      <workItem from="1667414007489" duration="1696000" />
+      <workItem from="1667415818351" duration="2584000" />
+      <workItem from="1667434212929" duration="13000" />
+      <workItem from="1667434273372" duration="1121000" />
+      <workItem from="1667435459967" duration="2641000" />
+      <workItem from="1667438129415" duration="12827000" />
+      <workItem from="1667501430775" duration="5348000" />
+      <workItem from="1667511277779" duration="6964000" />
+      <workItem from="1667537547872" duration="1092000" />
+      <workItem from="1667539238366" duration="1000" />
+      <workItem from="1667583294625" duration="13095000" />
+      <workItem from="1667686361935" duration="1757000" />
+      <workItem from="1667695044673" duration="52872000" />
+      <workItem from="1667802755124" duration="1405000" />
+      <workItem from="1667804250363" duration="1699000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
